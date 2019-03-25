@@ -25,16 +25,12 @@
     }
 
     .main-box {
-      margin-top: 56px;
+      margin-top: 5rem;
     }
 
     body>.container {
       padding: 24px;
       background-color: #EDEDE8;
-    }
-
-    #hits {
-      overflow: auto;
     }
 
     .hits-box {
@@ -57,7 +53,12 @@
   </div>
 
   <div class="ui container main-box" id='form-div'>
-
+    <div class="ui grid">
+        <div class="row mobile only">
+            <br>
+            <br>
+        </div>
+    </div>
     <div class="submit-box">
       <div class="ui blue top attached segment">
         <h3>Submit an annual pay rate:</h3>
@@ -158,7 +159,7 @@
       empty: 'No results for <q>{{ query }}</q> were found.',
       cssClasses: {
         root: ['hits-box'],
-        list: ['ui', 'cards', 'three'],
+        list: ['ui', 'cards', 'three', 'stackable'],
         item: ['ui', 'card'],
       },
       templates: {
